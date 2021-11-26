@@ -1,4 +1,13 @@
-let nb1= window.prompt("give me the first nb");
-let nb2= window.prompt("give me the second nb");
+let nb1= document.getElementById("first_number");
+let nb2= document.getElementById("second_number");
+let validate = document.getElementById("validate")
 
-alert("the result of multiplication of "+nb1+" by "+nb2+" = "+nb1*nb2);
+
+validate.addEventListener("click",function () {
+
+    alert("the result of multiplication of "+nb1.value+" by "+nb2.value+" = "+nb1.value*nb2.value);
+    
+});
+
+
+
