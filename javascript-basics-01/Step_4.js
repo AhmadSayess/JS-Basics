@@ -1,14 +1,19 @@
- let name= window.prompt("enter your name please");
+ let name     = document.getElementById("name")
+ let surname  = document.getElementById("surname")
+ let city     = document.getElementById("city")
+ let validate = document.getElementById("validate")
 
- let surname = window.prompt("enter your surname please");
+ validate.addEventListener("click",function(){
+     
+    alert(`
+        Nom: ${name.value}
+        prenom:${surname.value}
+        Ville :${city.value}
+        `);
+ 
+ });
 
- let city = window.prompt("enter your city please")
 
  
 
 
- alert(`Nom: ${name}
-        prenom:${surname}
-        Ville :${city}
-         `
-     );
