@@ -1,4 +1,10 @@
-let nb1= window.prompt("give me the first nb");
-let nb2= window.prompt("give me the second nb");
+let first_number= document.getElementById("first_number");
+let second_number= document.getElementById("second_number");
+let validate = document.getElementById("validate");
 
-alert("the reminder of devision of "+nb1+" by "+nb2+" = "+nb1%nb2); 
+validate.addEventListener("click",function () {
+
+    alert("the reminder of devision of "+first_number.value+" by "+second_number.value+" = "+first_number.value/second_number.value); 
+    
+});
+

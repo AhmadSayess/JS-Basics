@@ -1,6 +1,6 @@
 let nb1= document.getElementById("first_number");
 let nb2= document.getElementById("second_number");
-let validate = document.getElementById("validate")
+let validate = document.getElementById("validate");
 
 
 validate.addEventListener("click",function () {
