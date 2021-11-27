@@ -13,6 +13,9 @@ function reset () {
         surname.value = null;
         city.value = null;
     }
+    else{
+        
+    }
 };
 
 
