@@ -1,10 +1,13 @@
-let shoesize =window.prompt("give me shoe zize");
-let birthyear =window.prompt("give me birth year");
 
-function Name(shoesize,birthyear)  {
-    return (shoesize * 2 + 5) * 50 - birthyear +1766;
-  };
+let shoe_size = document.getElementById("shoe_size")
+let  birth_year = document.getElementById("year")
+let validate = document.getElementById("validate")
 
-  alert("the result is " +Name(shoesize,birthyear) );
-  
-  
+  validate.addEventListener("click",function (){
+    alert (
+      `the result is 
+      ${ (shoe_size.value * 2 + 5) * 50 -  birth_year.value +1766 }
+      
+      `
+  )
+  })
