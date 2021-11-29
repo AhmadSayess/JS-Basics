@@ -5,9 +5,12 @@ let validate = document.getElementById("validate");
 
 validate.addEventListener("click",function () {
 
-    alert("the result of multiplication of "+nb1.value+" by "+nb2.value+" = "+nb1.value*nb2.value);
+    
+    alert( 
+        ` 
+        the result of multiplication of 
+        ${nb1.value} x ${nb2.value} = ${nb1.value*nb2.value}
+        `
+    )
     
 });
-
-
-
